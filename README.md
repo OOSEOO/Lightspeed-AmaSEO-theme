@@ -1,4 +1,4 @@
-Lightspeed AmaSEO theme
+#Lightspeed AmaSEO theme
 
 ------------------------
 Changelog 19-05-2016
