@@ -1,0 +1,283 @@
+body {
+  color: {{ theme.color_text }}!important;
+{% if theme.font != 'Arial' %}
+font-family: "{{ theme.font }}", Helvetica, sans-serif!important;
+{% endif %}
+background:{{ theme.bg_webshop }} url('background.png') {{ theme.bg_repeat }} {{ theme.bg_position }}!important;
+font-size: {{ theme.tekst_grootte }}px!important;
+}
+.gui-checkout .gui-progressbar ul li.gui-done a{
+  color: {{ theme.color_btn_search }}!important;
+}
+
+a {color: {{ theme.color_links }};}
+a:hover {color: {{ theme.color_links }};}
+
+.menu2laags input.form-control,
+.menu3laags.navbar-header.affix .menu .view-search .form-control {
+  border: 1px solid {{ theme.color_btn_search }};
+}
+.form-control:focus {
+  border-color: {{ theme.color_btn_search }};
+}
+/*-------------------------------- Backgrounds */
+
+.gui-progressbar ul li.done{background:{{ theme.color_header }};}
+
+.category.home, 
+.hometext,
+.sidebar .box{
+  background: {{ theme.bg_content }};
+}
+footer {
+  background: {{ theme.bg_footer}};
+color: {{ theme.color_navigatie }};
+}
+footer ul li a, footer a {
+  color: {{ theme.color_navigatie }}; 
+}
+footer ul li a:hover {
+  color: {{ theme.color_navigatie }};
+}
+.footer-socials {
+  background: {{ theme.bg_social_media }};
+}
+.footer-sub {
+  background: {{ theme.bg_content }};
+color:{{ theme.color_text }};
+}
+.usps {
+  background:{{ theme.bg_usp }}; 
+}
+.usps .usp {
+  color:{{ theme.color_usp }};
+}
+.usps .usp .icon-usp {
+  color:{{ theme.color_usp_icons }};
+}
+.banner_cart {
+  background:{{ theme.bg_winkelwagen_banner }};
+color: {{ theme.bg_winkelwagen_banner | color_mix ('#FFFFFF', 0.9) }};
+}
+.banner_cart a {
+  color: {{ theme.bg_winkelwagen_banner | color_mix ('#FFFFFF', 0.9) }};
+}
+.sticky-mobile {
+  background:{{ theme.bg_navigatie_boven }};
+}
+header {
+  background: {{ theme.bg_header }} url('bg-image-header.png')  {{ theme.herhaal_bg_header }} {{ theme.positie_bg_header }};
+}
+.gui-blog header {
+  background:none;
+}
+
+/*-------------------------------- Navigatie */
+.navbar-toggle:focus,
+.navbar-toggle:hover,
+.togglesub{
+  background: {{ theme.bg_navigatie_onder }};
+}
+
+.navbar-toggle .icon-bar,
+.navbar-toggle .icon-bar{
+  background-color: {{ theme.color_navigatie }};
+}
+.navbar-toggle:focus .icon-bar,
+.navbar-toggle:hover .icon-bar {
+  background:{{ theme.color_navigatie | color_mix('#000000', 0.1) }}!important;
+}
+.togglesub{
+  color:{{ theme.color_navigatie | color_mix('#000000', 0.1) }}!important;
+}
+
+.navbar-toggle,
+.menu2laags.navbar,
+.navbar-header.affix,
+.navbar-header.affix .menu ul.inner,
+.navbar-header.affix .menu .view-search{
+  background: {{ theme.bg_navigatie_boven }};
+}
+.menu2laags ul li a,
+.menu ul li a,
+a.cart:hover{
+  color: {{ theme.color_navigatie }};
+background: {{ theme.bg_navigatie_boven }};
+}
+.menu3laags li.has-submenu .caret {
+  border-top-color: {{ theme.color_navigatie }};
+border-bottom-color: {{ theme.color_navigatie }};
+}
+.menu2laags ul.list-unstyled li a, 
+.menu2laags li.active ul.list-unstyled li a, 
+.menu2laags li.current ul.list-unstyled li a {
+  color: {{ theme.color_navigatie | color_mix('#000000', 0.2) }};
+}
+.menu2laags ul.list-unstyled li.active a, 
+.menu2laags li.active ul.list-unstyled li.active a {
+  color: {{ theme.color_navigatie }};
+}
+.flex-direction-nav a:hover {
+  color: {{ theme.bg_navigatie_onder }};
+}
+.menu2laags ul li a:hover,
+.menu2laags ul li.active a,
+.menu2laags ul li ul li a,
+.menu2laags .nav .open>a,
+.menu ul li a:hover,
+.menu ul li a ul li a:hover,
+.menu ul li.current a,
+a.cart{
+  color: {{ theme.color_navigatie }};
+background: {{ theme.bg_navigatie_onder }};
+}
+.scrollToTopSticky,
+.scrollToTopSticky:hover{
+  color: {{ theme.color_navigatie }};
+}
+
+.sub-bg-menu,
+.yamm .dropdown.yamm-fw .dropdown-menu,
+.menu ul > li > ul,
+.menu ul > li > ul > li > a {
+  color: {{ theme.color_navigatie }};
+background: {{ theme.bg_navigatie_onder }};
+}
+
+.menu ul li ul li ul li a {
+  background:{{ theme.bg_navigatie_onder | color_mix('#FFFFFF', 0.1) }}!important;
+}
+
+/*-------------------------------- Sliders */
+.slider .slogan {
+  background: {{ theme.optie_1_bg_slogan }};
+color: {{ theme.optie_1_color_slogan }};
+}
+
+/*-------------------------------- Category */
+.category.home h2 span {
+  background:{{ theme.bg_content }};
+}
+.category.home h2 {
+  border-bottom:1px solid {{ theme.bg_content | color_mix('#000000', 0.1) }}; 
+}
+.autocomplete .price {
+  color:{{ theme.color_prijzen }};
+}
+#collection-filter-price .ui-slider-handle {
+  background:{{ theme.color_btn_search }};
+border:1px solid {{ theme.color_btn_search | color_mix('#000000', 0.1) }}
+}
+.catalog .box h3 span {
+  color: {{ theme.color_btn_shop }};
+}
+.nav-tabs li.slide-line {
+  background: {{ theme.color_btn_shop }};
+}
+
+/*-------------------------------- Products */
+.products h2 {
+  background: {{ theme.bg_navigatie_onder}};
+color: {{ theme.color_navigatie }};
+}
+#recproducts .flex-direction-nav a, #popproducts .flex-direction-nav a, #saleproducts .flex-direction-nav a, #popproducts-fullwidth .flex-direction-nav a, #saleproducts-fullwidth .flex-direction-nav a {
+  background: {{ theme.bg_webshop }};
+}
+.price {
+  color:{{ theme.color_prijzen }}; 
+}
+.product-discounts span {
+  background:{{ theme.bg_navigatie_onder }};
+color: {{ theme.color_navigatie }};
+}
+
+/*-------------------------------- Labels */
+
+.label-sale {
+  background:{{ theme.bg_sale_label }};
+color: {{ theme.bg_sale_label | color_mix('#FFFFFF', 0.9)  }};
+}
+.label-custom {
+  background:{{ theme.bg_custom_label }};
+color: {{ theme.bg_custom_label | color_mix('#FFFFFF', 0.9)  }};
+}
+
+/*-------------------------------- Buttons   */
+
+.btn-search,
+.btn-news,
+.btn-shopnow,
+.menu2laags .stickysearch,
+.menu3laags.navbar-header.affix .menu .stickysearch{
+  background:{{ theme.color_btn_search }};
+color: {{ theme.color_buttons }}!important;
+}
+.btn-news:hover,
+.btn-search:hover{
+  background:{{ theme.color_btn_search | color_mix('#000', 0.1) }};
+color: {{ theme.color_buttons | color_mix('#fff', 0.9) }}!important;
+}
+.btn-search:before {
+  border-color: transparent {{ theme.color_btn_search }};
+}
+.btn-search:hover:before {
+  border-color: transparent {{ theme.color_btn_search | color_mix('#000', 0.1) }};
+}
+.btn-view, .gui-button-action {
+  background:{{ theme.color_btn_view }}!important;
+color: {{ theme.color_buttons }}!important;
+padding:6px 18px;
+}
+.btn-view:hover{
+  background:{{ theme.color_btn_view | color_mix('#000', 0.1)}}!important;
+color: {{ theme.color_buttons | color_mix('#fff', 0.9) }}!important;
+}
+.btn-shopnow {
+  background:{{ theme.color_btn_shop }}; 
+color: {{ theme.color_buttons }};
+}
+.btn-shopnow:hover{
+  background:{{ theme.color_btn_shop | color_mix('#000', 0.1)}}!important;
+color: {{ theme.color_buttons | color_mix('#fff', 0.9) }}!important;
+}
+.scrollToTop {
+  background:{{ theme.color_btn_view }};
+}
+.topbar .glyphicon {
+  color:{{ theme.bg_navigatie_onder }}!important;
+}
+
+/*-------------------------------- Overig   */
+
+.bg .border-bottom {
+  border-bottom: 2px solid {{ theme.bg_content }};
+}
+
+@media (min-width: 786px){
+  #newsletterbar {
+    border-top:0;
+}
+.bg .border-right {
+  border-right: 1px solid {{ theme.bg_content }};
+} 
+
+}
+
+@media (min-width: 992px) {
+  .menu ul > li > ul > li > a:hover {
+    color:{{ theme.color_navigatie }};
+background: {{ theme.bg_navigatie_boven }};
+}
+.menu > ul > li.has-submenu > ul.sub-menu > li.has-submenu > ul.sub-menu > li a{
+  border-bottom: 1px solid {{ theme.bg_navigatie_onder | color_mix('#FFFFFF', 0.3) }}!important;
+}
+.menu > ul > li.has-submenu > ul.sub-menu > li.has-submenu > ul.sub-menu > li a:hover{
+  background:{{ theme.bg_navigatie_onder}}!important;
+}
+.subbg{
+  background:{{ theme.bg_navigatie_onder}};
+}
+header, .header-links > li a {
+  color: {{ theme.color_header }}!important;
+}
+}

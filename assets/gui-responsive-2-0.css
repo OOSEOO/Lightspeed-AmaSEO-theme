@@ -1,0 +1,126 @@
+/*=========================================
+  GUI-Responsive v2.0 SEOshop Group B.V.
+=========================================*/
+.gui * {
+   color: #333;
+}
+.gui-popover {
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    box-shadow: 0 0px 0 2200px rgba(0,0,0,0.5);
+    z-index: 999999;
+}
+@media (max-width: 767px) { 
+  .gui-progressbar,
+  .gui-div-cart-related {
+    display: none;
+  }  
+  .gui-thankyou .gui-col2-big .gui-col2-big-col2 {
+    width:100%;
+  }
+  .gui-col3-equal .gui-col3-equal-col2.gui-div-cart-coupons {
+    width: 50%;
+  }
+  .gui-cart-sum .gui-item .gui-option {
+    padding: 0px 0 0px 5px;
+  }
+  .gui-col2-right-col1.gui-div-faq-questions,
+  .gui-blog .gui-col2-right-col1 {
+    width: 57%;
+  }
+  .gui-col2-right-col2.gui-div-faq-right,
+  .gui-blog .gui-col2-right-col2 {
+    width: 40%;
+  }
+}
+@media (max-width: 480px) { 
+  /* DOEI! */
+  .gui-table thead,
+  .gui-table .gui-button-small,
+  .gui-col3-equal-col1.gui-div-cart-related,
+  .gui-cart .gui-div-cart-shipping,
+  .gui-table table thead tr th:nth-child(5),
+  .gui-table table tbody tr td:nth-child(5),
+  .gui-cart .gui-table tbody tr td:first-child,
+  .gui.gui-checkout.gui-checkout-confirm .gui-table table thead tr th:nth-child(3),
+  .gui.gui-checkout.gui-checkout-confirm .gui-table table tbody tr td:nth-child(3),
+  .gui.gui-thankyou .gui-table table thead tr th:nth-child(3),
+  .gui.gui-thankyou .gui-table table tbody tr td:nth-child(3),
+  .gui-cart .gui-table tbody tr:last-child td:last-child {
+    display:none;
+  }
+  .gui-cart .gui-table a.gui-button-small {
+    visibility:hidden;
+  } 
+
+  /* gui-table */
+  .gui-table {
+    padding-bottom: 55px;
+    overflow: hidden;
+  }
+  .gui-checkout-confirm .gui-table { 
+    padding-bottom: 0px;
+  }
+  .gui-table tbody tr {
+    width: 100%;
+  }
+  .gui-cart .gui-table tbody tr:last-child td {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 55px;
+    line-height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: -1px;
+  }
+  .gui-cart span.valueAmount {
+    display:block;
+    text-align:center;
+  } 
+  
+  /* grid */
+  .gui-col2-big .gui-col2-big-col1,
+  .gui-col2-big .gui-col2-big-col2,
+  .gui-col2-equal .gui-col2-equal-col1,
+  .gui-col2-equal .gui-col2-equal-col2,
+  .gui-col2-left .gui-col2-left-col1,
+  .gui-col2-left .gui-col2-left-col2,
+  .gui-col2-leftm .gui-col2-leftm-col1,
+  .gui-col2-leftm .gui-col2-leftm-col2,
+  .gui-col2-right .gui-col2-right-col1,
+  .gui-col2-right .gui-col2-right-col2,
+  .gui-col2-rightm .gui-col2-rightm-col1,
+  .gui-col2-rightm .gui-col2-rightm-col2,
+  .gui-col3-center .gui-col3-center-col3,
+  .gui-col3-center .gui-col3-center-col2,
+  .gui-col3-center .gui-col3-center-col3,
+  .gui-col3-equal .gui-col3-equal-col1,
+  .gui-col3-equal .gui-col3-equal-col2,
+  .gui-col3-equal .gui-col3-equal-col3 {
+    float: none;
+  margin: 0px;
+    width:100%;
+  }
+  .gui-cart-sum .gui-item .gui-price {
+    width: 40%;
+  }
+  .gui-checkout-steps .gui-cart-sum,
+  .gui-checkout-method .gui-col2-equal .gui-col2-equal-col1 {
+    margin-top:15px;
+  }
+  .gui-blog .gui-col2-right-col2 {
+    margin-top: 30px;
+  }
+  .gui-min-height {
+    min-height: 0px !important;
+  }
+  .gui .gui-buttons .gui-left a {
+    display: block;
+    margin: 15px 0px;
+  }
+  .gui-checkout .gui-buttons.gui-border {
+    padding-top: 0px;
+    margin-top: 0px;  
+  }
+}
