@@ -1,0 +1,1 @@
+# AmaSEO-theme-forLightspeed
