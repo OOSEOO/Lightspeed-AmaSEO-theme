@@ -1,1 +1,1 @@
-{# snippet 'snippets/remarketing-category-products.rain' #}[{% for product in collection.products %}'{{ product.id }}'{% if not loop.last %},{% endif %}{% endfor %}]
+{# snippet 'snippets/remarketing-category-products.rain' #}[{% for product in collection.products %}'{{ product.id }}'{% if not loop.last %},{% endif %}{% endfor %}
