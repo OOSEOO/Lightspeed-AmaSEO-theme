@@ -1,1 +1,18 @@
-oif3$DworYi.XGDq:JZXcrgQxB7HJ.:gA90:5VoRC:9sKNMBH1PuD0j9t.alhMBC3ezVSHVEmlGuGhxB:vGbkuHvK7v97QgThXvY:Jg:OFfPP20DmVXQgVjI35HHQebBS8JtG8olFZhqlhHYtMDgh.OmHBEn7noT3qLLLkiULX67OsuVhKNueoyofQi5GeZ5A7EX8Uz9Z2rItAR:AgPLb7FD4BR0kU.MIAD84TsoS2eGBsd7oe93hgUuaKGCntWmF9:8O3utX95Lq8x4SATVRV6YV7GEt:kjE3f.BsbiS4UJiPqGXn7SGLzbCJY6f9TkXB34Q9oPTmxWunDAqflKs2WKNXYrryojNV7ajjPBqTVeMCVVCBF7T2xoWqe0Brj3A58CGnCJ3AQCgLSykE544LlbSdeoIJhUrbZi.sgvI5Qjt6.rQbl2hbwcbLi7SSHst09jElMN49hmE6di9cFdghhFHDOWY6buvIeN1.12ECvwrqEELsG.14dMJhsFUaU4wPQDgI2LlSgCScISDN7aIwu6ajl:QKHJD:z73MZw9Rg3fBH6:x:t.:oA71Q8i94.h5BNCjFVs9iNB1wNdD06DJQkt:Z9ArwnfmorbYwBe2zECCL:HhdyjpFc8e2GPx9YnaOkNtAcKhHxYrGPs0FO9xgF4mgq4OLu2mxLAjZkox1a4ao0Yyv44UqaaHddU2PGRAFREdOE8BA.FJ3hmo9uNuFneJu9aINrVAPybRNfxO0nMQ0HPgXo9FNPJN6N0Cm8KFfAlMqBREM:D7iC3Yf6Ed0BFKhs5GlmJLJvhfWp6RrHERBSffdg3xNfoOLdHLjTcX:zo4FTA.:5BD:sDhkeK15v.:NvF5YZcxdR5ktY9h9HbrzJh:U3wKrhQKddWgHRTYFjweTPmq8iPC1P0nqQus:gIHzbn7lhEdSsmKvi.YkXk3QmJGROEwAJSeEO14Zxe74IdI.6snWE8JaiY8S1aqNxIaXBBMgaaJ7AnSt.ZwJ2l3cZMi3RsMNzEniCgOxpibEiy5n5Ae9LeAbRxqCwW7kx:vKycrIq6e4n3pCKgCTsZGQb1d1zq9VH2ARCN5sMRPcyg4Mh8mSNfSURZlqWCqsLm5ydFC77HgmSp8kJQk.peFYKSS.apMLH:cDBwiqSQLqFKuZ6uhyOpqFdWQn:usgO7:0EBRHzwKrzbpHbTDLsH6h35rgaxsaRTpSX:nvgUOg6gqq1SzXDlq688u27.mFYjGVved6wU0SJBgdz6VwBt2dcK2stgNd8DghIeuYEW636jVUsexiqiLPm3MkcScB9Q4DQb7Cyh4wBdfC1zATd5D63ffrtgxsvSsoYI3kpT8uox8Chz0yv0Q0qekOSn8oeqvL.Ocfy91iRwedExpBR:7DyZsHQw4Jy8LHXB7CiSOwdLJ2PM.lMTW:.4EYuap6Po8EoLZQBFE:wNHcgMGgWeylUjWuIo6dHHUyvrdQj0gcUsTKKKa0S59rXHoL:s0XdfdYmK3x0:JIuM8MVxouTdkBQDvxznxggQMf.ZSz:Nof2J2fG4fdqigFSjGB.MoaRmJ7Y31tUKx0P6tXtri5Xsc0Ojj0Bwfq5gJ:TmtkTpJclXDvRMCdmVD2i6g3Pc:iXHZAuU18Mh2.2Vu:7Ox3:UK1h7qInNUDNHsvqYIuIPHpfu55oyA65V0PtlUnKsn7lD:3uFhMl4MR2BmkChzoSSpYh3BfgJ7JmIw9bOckDd9h0D0P1w5WqpxyxOCf9UYAYX:xplq0SoxkRcO:dV0lThtpbm.2yCB67ta:bdO.JaMic5JrFxedsjyWLsqzQsYjlxkVQZFpN65HTeTq6Ye1DBjXlF40dPaF7ywATqkeOcJatl9h0aqCGNU1kKEgyhh3pbrA$dn3u
+{# snippet 'snippets/loyaltylion.rain' #}
+
+{% if theme.lion_init and theme.page_account_id %}
+<script>(function(t,e){window.lion=e;var n,i=t.getElementsByTagName("script")[0];n=t.createElement("script"),n.type="text/javascript",n.async=!0,n.src="//dg1f2pfrgjxdq.cloudfront.net/libs/ll.sdk-1.1.js",i.parentNode.insertBefore(n,i),e.init=function(n){function i(t,e){var n=e.split(".");2===n.length&&(t=t[n[0]],e=n[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}var r,o=t.getElementsByTagName("script")[0];r=t.createElement("script"),r.type="text/javascript",r.async=!0,r.src="//platform.loyaltylion.com/sdk/configuration/"+n+".js",o.parentNode.insertBefore(r,o),e.ui=e.ui||[];for(var a="_push configure track_pageview identify_customer auth_customer identify_product on off ui.refresh".split(" "),c=0;a.length>c;c++)i(e,a[c]);e._token=n}})(document,window.lion||[]);
+lion.init('{{ theme.lion_init }}');
+lion.configure({ platform: 'seoshop' });
+{% if page.account.id %}
+  {% set now = "now" | date("c") %}
+  {% set auth_src = page.account.id ~ now ~ theme.page_account_id %}
+  lion.identify_customer({
+    id: "{{ page.account.id }}",
+    email: "{{ page.account.email }}",
+    name: "{{ page.account.fullname }}"
+  });
+  lion.auth_customer({ date: "{{ now }}", auth_token: "{{ auth_src | hash("sha1") }}" });
+{% endif %}
+</script>
+{% endif %}
